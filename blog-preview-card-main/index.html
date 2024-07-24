@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+  @font-face {
+    font-family: 'Figtreee'; /* Name your font family */
+    src: url('assets/fonts/Figtree-VariableFont_wght.ttf'); /* Locate the .ttf file within your directory*/
+  }
+
+     /*Root*/
+     :root {
+      --yellow: #F4D04E;
+      --gray-950: #111111;
+      --gray-500: #6B6B6B;
+      --white: #FFF;
+    }
+
+    /*Style*/
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: var(--yellow); display: flex; justify-content: center; align-items: center; height: 100vh; font-family: 'Figtree', sans-serif;}
+    .card { max-width: 384px; max-height: 522px; background-color: var(--white); border-radius: 10px; padding: 20px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); text-align: left; }
+    img { width: 100%; height: auto; margin: 0px; border-radius: 10px; }
+    .attribution { font-size: 11px; text-align: center; margin-top: 10px; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    main { text-align: center; }
+    .preview-tag { margin-top: 16px; }
+    .preview-tag span { color: var(--gray-950); background: var(--yellow); padding: 5px; border-radius: 5px; font-size: 14px; font-weight: 700;}
+    .preview-date { margin-top: 16px; }
+    .preview-date span { color: var(--gray-950); font-size: 14px; letter-spacing: 0px; font-weight: 500; }
+    .preview-title { margin-top: 16px; }
+    .preview-title span { color: var(--yellow); font-size: 24px; letter-spacing: 0px; font-weight: 700; letter-spacing: 0px; }
+    .preview-content { margin-top: 16px; }
+    .preview-content span { color: var(--gray-500); font-size: 16px; letter-spacing: 0px; font-weight: 500; }
+    .preview-author { display: inline-flex; margin-top: 20px; justify-content: center; align-items: center; text-align: center; }
+    .preview-author img { width: 32px; height: 32px; border-radius: 100%; margin-right: 12px; }
+    .preview-author span { color: var(--gray-950); font-size: 14px; font-weight: 700; letter-spacing: 0px; }
+  </style>
+</head>
+<body>
+
+  <main>
+    <div class="card">
+      <img src="assets/images/illustration-article.svg" alt="Lu Article Illustration">
+      <div class="preview-tag">
+        <span>Learning</span>
+      </div> 
+      
+      <div class="preview-date">
+        <span>Published 21 Dec 2023</span>
+      </div>
+
+      <div class="preview-title">
+        <span>HTML & CSS foundations</span>
+      </div>
+
+      <div class="preview-content">
+        <span>These languages are the backbone of every website, defining structure, content, and presentation.</span>
+      </div>
+
+      <div class="preview-author">
+        <img src="assets/images/image-avatar.webp" alt="Lu Preview Author">
+        <span>Greg Hooper</span>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Michael Nwankwo</a>.
+    </div>
+  </main>
+</body>
+</html>
